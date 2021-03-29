@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		E479EE1E26119DDE00DF99AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479EE1D26119DDE00DF99AD /* AppDelegate.swift */; };
-		E479EE2026119DDE00DF99AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479EE1F26119DDE00DF99AD /* SceneDelegate.swift */; };
 		E479EE2226119DDE00DF99AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E479EE2126119DDE00DF99AD /* ViewController.swift */; };
 		E479EE2526119DDE00DF99AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E479EE2326119DDE00DF99AD /* Main.storyboard */; };
 		E479EE2726119DDE00DF99AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E479EE2626119DDE00DF99AD /* Assets.xcassets */; };
 		E479EE2A26119DDE00DF99AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E479EE2826119DDE00DF99AD /* LaunchScreen.storyboard */; };
+		E4E97F172611A03600CE599A /* VideoCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E97F152611A03600CE599A /* VideoCaptureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E479EE1A26119DDE00DF99AD /* Pigeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pigeon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E479EE1D26119DDE00DF99AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E479EE1F26119DDE00DF99AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E479EE2126119DDE00DF99AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E479EE2426119DDE00DF99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E479EE2626119DDE00DF99AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E479EE2926119DDE00DF99AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E479EE2B26119DDE00DF99AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4E97F152611A03600CE599A /* VideoCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCaptureViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		E479EE1C26119DDE00DF99AD /* Pigeon */ = {
 			isa = PBXGroup;
 			children = (
+				E4E97F142611A00500CE599A /* VideoCapture */,
 				E479EE1D26119DDE00DF99AD /* AppDelegate.swift */,
-				E479EE1F26119DDE00DF99AD /* SceneDelegate.swift */,
 				E479EE2126119DDE00DF99AD /* ViewController.swift */,
 				E479EE2326119DDE00DF99AD /* Main.storyboard */,
 				E479EE2626119DDE00DF99AD /* Assets.xcassets */,
@@ -65,6 +65,14 @@
 				E479EE2B26119DDE00DF99AD /* Info.plist */,
 			);
 			path = Pigeon;
+			sourceTree = "<group>";
+		};
+		E4E97F142611A00500CE599A /* VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				E4E97F152611A03600CE599A /* VideoCaptureViewController.swift */,
+			);
+			path = VideoCapture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +147,7 @@
 			files = (
 				E479EE2226119DDE00DF99AD /* ViewController.swift in Sources */,
 				E479EE1E26119DDE00DF99AD /* AppDelegate.swift in Sources */,
-				E479EE2026119DDE00DF99AD /* SceneDelegate.swift in Sources */,
+				E4E97F172611A03600CE599A /* VideoCaptureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BC7U46938F;
 				INFOPLIST_FILE = Pigeon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BC7U46938F;
 				INFOPLIST_FILE = Pigeon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
